@@ -1,0 +1,97 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,700;1,700&family=Nunito+Sans:wght@600;900&display=swap");
+
+:root {
+  --primary-color: #f9c901;
+  --secondary-color: #111;
+  --white-color: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--primary-color);
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* ===== Top ===== */
+.top {
+  padding: 3rem;
+}
+
+.heading {
+  font-family: "Arvo", serif;
+  font-size: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-wrapper button {
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  padding: 10px 20px;
+  margin: 1rem 9rem;
+  transition: all 0.3s;
+  outline: none;
+}
+.top .btn {
+  width: 242px;
+  height: 59px;
+  color: var(--white-color);
+  background: var(--secondary-color);
+  border-radius: 20px;
+  margin: 2rem;
+  font-size: 1.5rem;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== Sounds ====== */
+.sounds .heading {
+  padding-top: 100px;
+  font-size: 8rem;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 900;
+}
+
+.sounds .row {
+  margin: 4rem 0rem;
+}
+
+.sounds img {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  background: #000000;
+  border-radius: 31px;
+  margin: 0px 10px;
+}
+
+.sounds button {
+  border: none;
+  background: transparent;
+}
