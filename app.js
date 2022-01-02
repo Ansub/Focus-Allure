@@ -1,51 +1,24 @@
-const incButton = document.querySelector(".inc");
-const decButton = document.querySelector(".dec");
 const startButton = document.querySelector(".start-btn");
 const resetButton = document.querySelector(".reset-btn");
+const countdown = document.querySelector("#countdown");
 
-let min = 24;
-let sec = 59;
-//  Increment the value of the counter
-incButton.addEventListener("click", function () {
-  min++;
-  document.querySelector(".mins").innerHTML = min;
-  return min;
+let min = 25;
+let time = min * 60;
+let counter;
+
+startButton.addEventListener("click", () => {
+  counter = setInterval(function updateCountDown() {
+    let min = Math.floor(time / 60);
+    let seconds = time % 60;
+    time--;
+
+    countdown.innerHTML = `${min}:${seconds}`;
+  }, 1000);
 });
 
-//  Decrement the value of the counter
-decButton.addEventListener("click", function () {
-  min--;
-  document.querySelector(".mins").innerHTML = min;
-  return min;
+resetButton.addEventListener("click", () => {
+  clearInterval(counter);
+  min = 25;
+  time = min * 60;
+  countdown.innerHTML = "25:00";
 });
-
-//  On Clicking the Start Button
-startButton.addEventListener(
-  "click",
-  function () {
-    let counter = setInterval(function () {
-      document.querySelector(".secs").innerHTML = sec;
-      sec--;
-      if (sec < 0) {
-        sec = 60;
-        min--;
-        document.querySelector(".mins").innerHTML = min;
-        if (min === 0) {
-          clearInterval(counter);
-        }
-      }
-    }, 1000);
-  },
-  { once: true }
-);
-
-resetButton.addEventListener(
-  "click",
-  function () {
-    min = 25;
-    sec = 60;
-    document.querySelector(".mins").innerHTML = min;
-    document.querySelector(".secs").innerHTML = "00";
-  },
-  { once: true }
-);
