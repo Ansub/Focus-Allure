@@ -1,71 +1,20 @@
-function rain() {
-  const myAudio = document.getElementById("rain");
-  if (myAudio.paused) {
-    myAudio.play();
-  } else {
-    myAudio.pause();
-  }
-}
+const sounds = {
+  rain: "audio/rain.mp3",
+  cafe: "audio/cafe.mp3",
+  city: "audio/city.mp3",
+  beach: "audio/beach.mp3",
+  thunder: "audio/thunder.mp3",
+  bird: "audio/bird.mp3",
+  night: "audio/night.mp3",
+};
 
-function cafe() {
-  const myAudio = document.getElementById("cafe");
-  if (myAudio.paused) {
-    myAudio.play();
-  } else {
-    myAudio.pause();
+document.querySelector("#sound-btns").addEventListener("click", function (e) {
+  for (let sound of Object.keys(sounds)) {
+    if (e.target.id === sound) {
+      let audio = new Audio(sounds[sound]);
+      audio.play();
+    } else if (audio.play()) {
+      audio.pause();
+    }
   }
-}
-
-function city() {
-  const myAudio = document.getElementById("city");
-  if (myAudio.paused) {
-    myAudio.play();
-  } else {
-    myAudio.pause();
-  }
-}
-
-function beach() {
-  const myAudio = document.getElementById("beach");
-  if (myAudio.paused) {
-    myAudio.play();
-  } else {
-    myAudio.pause();
-  }
-}
-
-function thunder() {
-  const myAudio = document.getElementById("thunder");
-  if (myAudio.paused) {
-    myAudio.play();
-  } else {
-    myAudio.pause();
-  }
-}
-
-function breeze() {
-  const myAudio = document.getElementById("breeze");
-  if (myAudio.paused) {
-    myAudio.play();
-  } else {
-    myAudio.pause();
-  }
-}
-
-function bird() {
-  const myAudio = document.getElementById("bird");
-  if (myAudio.paused) {
-    myAudio.play();
-  } else {
-    myAudio.pause();
-  }
-}
-
-function night() {
-  const myAudio = document.getElementById("night");
-  if (myAudio.paused) {
-    myAudio.play();
-  } else {
-    myAudio.pause();
-  }
-}
+});
