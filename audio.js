@@ -13,8 +13,6 @@ document.querySelector("#sound-btns").addEventListener("click", function (e) {
     if (e.target.id === sound) {
       let audio = new Audio(sounds[sound]);
       audio.play();
-    } else if (audio.play()) {
-      audio.pause();
     }
   }
 });
