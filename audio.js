@@ -10,7 +10,6 @@ const sounds = {
 };
 
 document.querySelector("#sound-btns").addEventListener("click", function (e) {
-  console.log(e.target.id);
   for (let sound of Object.keys(sounds)) {
     if (e.target.id === sound) {
       let audio = new Audio(sounds[sound]);
