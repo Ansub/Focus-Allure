@@ -14,6 +14,12 @@ startButton.addEventListener("click", () => {
 
     countdown.innerHTML = `${min}:${seconds}`;
   }, 1000);
+
+  let quote = document.getElementById("quote");
+
+  fetch("https://api.quotable.io/random")
+    .then((res) => res.json())
+    .then((data) => (quote.innerText = data.content));
 });
 
 resetButton.addEventListener("click", () => {
@@ -21,4 +27,5 @@ resetButton.addEventListener("click", () => {
   min = 25;
   time = min * 60;
   countdown.innerHTML = "25:00";
+  quote.innerText = "";
 });

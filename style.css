@@ -77,6 +77,11 @@ body {
   justify-content: center;
 }
 
+#quote {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.2rem;
+}
+
 /* ===== Sounds ====== */
 .sounds .heading {
   padding-top: 100px;
