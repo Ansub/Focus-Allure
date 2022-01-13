@@ -1,0 +1,31 @@
+@media (max-width: 600px) {
+  .logo {
+    width: 400px;
+    height: 300px;
+  }
+
+  .top {
+    padding: 0rem;
+    margin-bottom: 5rem;
+    margin-top: 0rem;
+  }
+  .top .btn {
+    margin: 1rem;
+  }
+  .heading {
+    font-size: 8rem;
+  }
+
+  .sounds .heading {
+    padding-top: 0px;
+  }
+  .sounds img {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    border-radius: 30px;
+  }
+  #sound-btns {
+    padding: 0px 20px;
+  }
+}
