@@ -20,12 +20,13 @@
     padding-top: 0px;
   }
   .sounds img {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     padding: 10px;
     border-radius: 30px;
   }
-  #sound-btns {
-    padding: 0px 20px;
+
+  .sounds .row {
+    margin: 1rem 0.5rem;
   }
 }
