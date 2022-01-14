@@ -17,34 +17,27 @@ const sounds = {
   bird,
   night,
 };
-
 const buttonElements = document.getElementsByClassName("sound-button");
 
 document.querySelector("#sound-btns").addEventListener("click", function (e) {
-  // Loop for playing and pausing sounds
   for (let sound of Object.keys(sounds)) {
-    if ( e.target.id === sound ) {
+    if (e.target.id === sound) {
       sounds[sound].play();
-    } else {
-      sounds[sound].pause();
     }
   }
 
-  // Loop for adding or removing active class.
   for (let button of buttonElements) {
-    if( e.target.id === button.firstChild.id ){
+    if (e.target.id === button.firstChild.id) {
       button.firstChild.classList.add("active");
-    } else {
-      button.firstChild.classList.remove("active");
     }
   }
 });
 
-function pauseAudio() { 
+function pauseAudio() {
   for (let sound of Object.keys(sounds)) {
     sounds[sound].pause();
   }
   for (let button of buttonElements) {
     button.firstChild.classList.remove("active");
   }
-} 
+}

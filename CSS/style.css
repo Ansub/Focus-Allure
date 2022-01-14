@@ -29,8 +29,8 @@ body {
 /* ===== Top ===== */
 .top {
   padding: 4rem;
-  margin-bottom: 5rem;
-  margin-top: 5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .logo {
@@ -45,16 +45,7 @@ body {
   flex-direction: column;
 }
 
-.btn-wrapper button {
-  background: transparent;
-  border: none;
-  font-size: 2rem;
-  padding: 10px 20px;
-  margin: 1rem 9rem;
-  transition: all 0.3s;
-  outline: none;
-}
-.button-primary {
+.top-button {
   width: 242px;
   height: 59px;
   color: var(--white-color);
@@ -62,6 +53,7 @@ body {
   border-radius: 20px;
   margin: 2rem;
   font-size: 1.5rem;
+  border: 0px;
 }
 
 .col {
@@ -82,9 +74,12 @@ body {
   font-size: 1.2rem;
 }
 
+.down-arrow {
+  width: 50px;
+  margin: 2rem;
+}
 /* ===== Sounds ====== */
 .sounds .heading {
-  padding-top: 100px;
   font-size: 5rem;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 900;
@@ -103,23 +98,43 @@ body {
   margin: 0px 10px;
 }
 
-.button-secondary,
 .sound-button {
   border: none;
   background: transparent;
 }
 
 .active.active {
-  background: red;
+  background: linear-gradient(-45deg, #de4daa, #98de5b, #ed008c, #f9484a);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.pause-btn {
+  border: 0px;
+  margin: 0px;
+  background: transparent;
+}
+.pause-btn img {
+  background: transparent;
+}
 /* ===== Footer ====== */
 footer {
   text-align: center;
   padding: 1.5rem;
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.2rem;
-  margin-top: 5rem;
 }
 
 footer a {
