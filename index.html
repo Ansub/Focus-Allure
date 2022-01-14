@@ -13,55 +13,53 @@
   </head>
   <body>
     <div class="container">
+      <!-- Top -->
       <section class="top">
         <!-- Logo, Timer, Start Button -->
         <img src="/images/Allure.svg" class="logo" />
         <div class="heading">      
           <div id="countdown">25:00</div>
         </div>
-        <button class="start-btn btn" >Start</button>
-        <button class="reset-btn btn" >Reset</button>
+        <button class="start-btn button-primary" >Start</button>
+        <button class="reset-btn button-primary" >Reset</button>
         <div id="quote"></div>
-
-        
       </section>
 
-      <!-- Sounds -->
+      <!-- Sound buttons -->
       <section class="sounds">
         <div class="heading">Sounds</div>
-        <div id="sound-btns">
-        <div class="row">
-          <!-- rain -->
-          <button  type="button" ><img src="images/icons/rain.png" id="rain" ></img></button>
-          <!-- cafe -->
-          <button  type="button" ><img src="images/icons/cafe.png" id="cafe" ></img></button>
-          <!-- City  -->
-          <button  type="button" ><img src="images/icons/city.png" id="city" ></img></button>
-          <!-- Beach -->
-          <button  type="button" ><img src="images/icons/beach.png"  id="beach"></button>
-          </button>
+          <div id="sound-btns">
+            <div class="row">
+              <!-- rain -->
+              <button  type="button" class="sound-button"><img src="images/icons/rain.png" id="rain"></img></button>
+              <!-- cafe -->
+              <button  type="button" class="sound-button"><img src="images/icons/cafe.png" id="cafe"></img></button>
+              <!-- City  -->
+              <button  type="button" class="sound-button"><img src="images/icons/city.png" id="city"></img></button>
+              <!-- Beach -->
+              <button  type="button" class="sound-button"><img src="images/icons/beach.png"  id="beach"></button>
+            </div>
+            <div class="row">
+              <!-- Thunder -->
+              <button type="button" class="sound-button"><img src="images/icons/thunder.png" id="thunder"></button>
+              
+              <!-- Breeze -->
+              <button type="button" class="sound-button"><img src="images/icons/breeze.png" id="breeze"></button>
+              
+              <!-- bird -->
+              <button type="button" class="sound-button"><img src="images/icons/bird.png" id="bird"></button>
+              
+              <!-- night -->
+              <button type="button" class="sound-button"><img src="images/icons/night.png" id="night"></button>
+            </div>
 
+          </div>
+          <button type="button" class="pause-btn button-primary" onclick="pauseAudio()">Pause</button>
         </div>
-        <div class="row">
-          <!-- Thunder -->
-          <button type="button"  ><img src="images/icons/thunder.png" id="thunder" ></button>
-          </button>
-          <!-- Breeze -->
-          <button type="button" ><img src="images/icons/breeze.png" id="breeze" ></button>
-          </button>
-          <!-- bird -->
-          <button type="button" ><img src="images/icons/bird.png" id="bird" ></button>
-          </button>
-          <!-- night -->
-          <button type="button"  ><img src="images/icons/night.png" id="night" ></button>
-          
-        </div>
-      </div>
-      </section>
-    </div>
+    </section>
 
     <footer>
-      <p>made with ❤️ by <a href="https://ansubkhan.com">Ansub Khan</a></p>
+      <p>Made with ❤️ by <a href="https://ansubkhan.com">Ansub Khan</a></p>
     </footer>
     <!-- Javascript -->
     <script src="/JS/app.js"></script>

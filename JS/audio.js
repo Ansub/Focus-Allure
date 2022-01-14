@@ -1,19 +1,50 @@
+const rain = new Audio("audio/rain.mp3");
+const cafe = new Audio("audio/cafe.mp3");
+const city = new Audio("audio/city.mp3");
+const beach = new Audio("audio/beach.mp3");
+const thunder = new Audio("audio/thunder.mp3");
+const breeze = new Audio("audio/breeze.mp3");
+const bird = new Audio("audio/bird.mp3");
+const night = new Audio("audio/night.mp3");
+
 const sounds = {
-  rain: "audio/rain.mp3",
-  cafe: "audio/cafe.mp3",
-  city: "audio/city.mp3",
-  beach: "audio/beach.mp3",
-  thunder: "audio/thunder.mp3",
-  breeze: "audio/breeze.mp3",
-  bird: "audio/bird.mp3",
-  night: "audio/night.mp3",
+  rain,
+  cafe,
+  city,
+  beach,
+  thunder,
+  breeze,
+  bird,
+  night,
 };
 
+const buttonElements = document.getElementsByClassName("sound-button");
+
 document.querySelector("#sound-btns").addEventListener("click", function (e) {
+  // Loop for playing and pausing sounds
   for (let sound of Object.keys(sounds)) {
-    if (e.target.id === sound) {
-      let audio = new Audio(sounds[sound]);
-      audio.play();
+    if ( e.target.id === sound ) {
+      sounds[sound].play();
+    } else {
+      sounds[sound].pause();
+    }
+  }
+
+  // Loop for adding or removing active class.
+  for (let button of buttonElements) {
+    if( e.target.id === button.firstChild.id ){
+      button.firstChild.classList.add("active");
+    } else {
+      button.firstChild.classList.remove("active");
     }
   }
 });
+
+function pauseAudio() { 
+  for (let sound of Object.keys(sounds)) {
+    sounds[sound].pause();
+  }
+  for (let button of buttonElements) {
+    button.firstChild.classList.remove("active");
+  }
+} 
