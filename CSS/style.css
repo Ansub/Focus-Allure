@@ -78,6 +78,7 @@ body {
   width: 50px;
   margin: 2rem;
 }
+
 /* ===== Sounds ====== */
 .sounds .heading {
   font-size: 5rem;
@@ -137,19 +138,16 @@ footer {
   font-size: 1.2rem;
 }
 
-footer a {
+.made-by {
   color: var(--secondary-color);
   text-decoration-color: var(--secondary-color);
   transition: ease-in 0.3s;
 }
 
-footer a:hover {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-  padding: 5px 10px;
-  border-radius: 5px;
-}
-
 a:visited {
   color: var(--secondary-color);
+}
+
+.producthunt {
+  color: transparent;
 }
