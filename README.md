@@ -1,11 +1,8 @@
-## Focus Allure
+# Focus Allure
 All-in-One Study Companion
 
-Focus Allure is a Study Companion App which helps student, people who are working or for anyone who is trying to Focus in the jobs they are doing.
+Focus Allure is a Study Companion App which helps student, people who are working or for anyone who is trying to Focus in the jobs they are doing. it works on the princicples of Pomodoro Technique, which is a 25 Minute Timer in this window of time person is going to focus on their work for 25 minutes and then they can take a break. 
 
-it works on the princicples of Pomodoro Technique, which is a 25 Minute Timer in this window of time person is going to focus on their work for 25 minutes and then they can take a break. 
-
-[![Screenshot-2022-01-03-at-6-36-06-PM.png](https://i.postimg.cc/wBzdy13K/Screenshot-2022-01-03-at-6-36-06-PM.png)](https://postimg.cc/210tg84T)
 
 
 what is unique about Focus Allure is the addition of Soundcapes, there are 8 Soundcapes users can choose from, they are:
@@ -19,5 +16,20 @@ what is unique about Focus Allure is the addition of Soundcapes, there are 8 Sou
 * bird
 * night
 
-[![Screenshot-2022-01-03-at-6-36-21-PM.png](https://i.postimg.cc/VNFPjzbJ/Screenshot-2022-01-03-at-6-36-21-PM.png)](https://postimg.cc/t17cbQkb)
+## How to Run?
+
+website is hosted on [vercel](https://focus-allure.vercel.app/)
+
+or if you want to see the code and run the app locally do the following steps: 
+
+1. download the [code](https://github.com/Ansub/Focus-Allure/archive/refs/heads/master.zip)
+2. unzip the file
+3. run index.html in your faviourate browser.
+
+
+## learn.md
+there is also a learn.md file which can help you out in learning how to build the same project.
+
+## Code of Conduct
+please read the [CODE OF CONDUCT](https://github.com/Ansub/Focus-Allure/blob/master/CODE_OF_CONDUCT.md)
 
