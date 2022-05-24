@@ -24,7 +24,7 @@ or if you want to see the code and run the app locally do the following steps:
 
 1. download the [code](https://github.com/Ansub/Focus-Allure/archive/refs/heads/master.zip)
 2. unzip the file
-3. run index.html in your faviourate browser.
+3. run index.html in your favorite browser.
 
 
 ## learn.md
